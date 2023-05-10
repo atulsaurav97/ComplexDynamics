@@ -17,13 +17,15 @@ LIBS += -L/home/achilles/anaconda3/lib/python3.8/site-packages/PyQt5 -lQt5Widget
 
 # Source files
 SOURCES += main.cpp
-RESOURCES += qml.qrc
+RESOURCES += gui.qml
 #HEADERS += *.h
 
 # Uncomment the following lines if your project requires additional Qt modules
 # QT += widgets
 # QT += network
 # QT += multimedia
+QT += qml
+QT += quick
 
 # Add any other necessary module dependencies
 # DEPENDPATH += /path/to/dependency/include

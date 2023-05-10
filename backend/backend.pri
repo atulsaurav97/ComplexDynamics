@@ -9,7 +9,7 @@ INCLUDEPATH += $$PWD/. \
 		$$PWD/src/.
 
 # Backend source files
-HEADERS += $$PWD/src/*.h
+HEADERS += $$PWD/src/*.hpp
 SOURCES += $$PWD/src/*.cpp
 
 

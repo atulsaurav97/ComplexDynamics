@@ -1,7 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-//#include "backend/src/backend.hpp"
+#include "backend.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -22,5 +22,4 @@ int main(int argc, char *argv[])
     return app.exec();
 }
 
-#include "main.moc"
 
