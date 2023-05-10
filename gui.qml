@@ -1,33 +1,36 @@
 import QtQuick 2.0
-import QtQuick.Controls 2.12
+import QtQuick.Controls 2.0
+import QtQuick.Layouts 1.0
 
 ApplicationWindow {
     visible: true
     width: 400
     height: 300
-    title: "QML GUI"
+    title: "Complex Dynamics"
 
-    Button {
-        text: "Create Geometry"
-        onClicked: {
-            // Call the createGeometry function from the backend
-            backend.createGeometry();
+    RowLayout {
+        anchors.centerIn: parent
+        spacing: 10
+
+        Button {
+            text: "Create Geometry"
+            onClicked: backend.createGeometry()
         }
-    }
 
-    Button {
-        text: "Modify Geometry"
-        onClicked: {
-            // Call the modifyGeometry function from the backend
-            backend.modifyGeometry();
+        Button {
+            text: "Modify Geometry"
+            onClicked: backend.modifyGeometry()
         }
-    }
 
-    Button {
-        text: "Run Simulation"
-        onClicked: {
-            // Call the runSimulation function from the backend
-            backend.runSimulation();
+        Button {
+            text: "Run Simulation"
+            onClicked: backend.runSimulation()
+        }
+
+        TextArea {
+            id: resultsText
+            Layout.fillWidth: true
+            Layout.fillHeight: true
         }
     }
 }

@@ -17,6 +17,7 @@ LIBS += -L/home/achilles/anaconda3/lib/python3.8/site-packages/PyQt5 -lQt5Widget
 
 # Source files
 SOURCES += main.cpp
+
 RESOURCES += gui.qml
 #HEADERS += *.h
 
@@ -26,6 +27,8 @@ RESOURCES += gui.qml
 # QT += multimedia
 QT += qml
 QT += quick
+QT += quickcontrols2
+
 
 # Add any other necessary module dependencies
 # DEPENDPATH += /path/to/dependency/include

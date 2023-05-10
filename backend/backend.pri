@@ -1,7 +1,6 @@
 # Backend.pri
 
 # Backend project settings
-TARGET = Backend
 TEMPLATE = app
 
 # Backend include paths
